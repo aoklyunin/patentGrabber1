@@ -110,6 +110,7 @@ def loadPatent(MPK, tp, link, number):
 
 def loadPages(s):
     with open('loads/' + MPK.replace('/', '_') + '(' + s + ').csv', 'r') as csvfile:
+        print('start')
         spamreader = csv.reader(csvfile, delimiter=';', quotechar='\n', quoting=csv.QUOTE_MINIMAL)
         cnt = 0
         for row in spamreader:
